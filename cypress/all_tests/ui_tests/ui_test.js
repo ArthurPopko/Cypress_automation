@@ -3,11 +3,6 @@ import SearchResultsPage from "../../page_objects/searchResultsPage";
 import AccessoriesPage from "../../page_objects/accessoriesPage";
 
 describe('UI test for google store', () => {
-    Cypress.on('uncaught:exception', (err, runnable) => {
-// returning false here prevents Cypress from
-// failing the test
-        return false
-    })
 
     it('Positive: find the item by name in google store', () => {
         cy.log("GIVEN User is at AccessoriesPage")

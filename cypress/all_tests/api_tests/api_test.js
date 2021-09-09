@@ -33,7 +33,7 @@ describe('Test for reqres', () => {
 
   testingData.forEach(({description, requestData}) =>
   {
-    it('Positive: Create user ${description}', () => {
+    it(`Positive: Create user ${description}`, () => {
       cy.request('POST', '/api/users', requestData).then(response => {
       expect(response.status).to.eq(201)
       expect(response.body).to.have.property("name", requestData.name)
@@ -44,9 +44,7 @@ describe('Test for reqres', () => {
 
   it('Negative: POST request - login unsuccessful', () => {
     cy.request({method: 'POST', url: '/api/login', failOnStatusCode: false, body:
-      {
-        "email": "peter@klaven"
-      } }).then(response => {
+          {"email": "peter@klaven"} }).then(response => {
       expect(response.status).to.eq(400)
     })
   })

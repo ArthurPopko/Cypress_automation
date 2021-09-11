@@ -51,7 +51,7 @@ npx cypress run -b chrome
 In order to get the report in the Cypress Dashboard you should add some more parameters:
 
 ```
-cypress run --record --key 1a755fd7-0b44-42e8-9382-1e9bb0ede89c
+npx cypress run --record --key 1a755fd7-0b44-42e8-9382-1e9bb0ede89c
 ```
 **--record** means that transfer results to the Cypress Dashboard is on.
 **--key** parameter followed by value **1a755fd7-0b44-42e8-9382-1e9bb0ede89** is used for access

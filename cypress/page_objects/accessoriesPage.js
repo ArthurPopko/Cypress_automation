@@ -13,7 +13,6 @@ class AccessoriesPage {
 
     performSearch(productToSearch) {
         this.searchIcon.click();
-
         this.searchInput.should('be.enabled').type(`${productToSearch}{enter}`);
     }
 }

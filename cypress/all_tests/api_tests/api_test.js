@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import Chance from  'chance'
+import Chance from 'chance'
 describe('Test for reqres', () => {
   beforeEach(() => {
   })
@@ -46,6 +46,7 @@ describe('Test for reqres', () => {
     cy.request({method: 'POST', url: '/api/login', failOnStatusCode: false, body:
           {"email": "peter@klaven"} }).then(response => {
       expect(response.status).to.eq(400)
+      expect(response.body).to.have.property("error", "Missing password")
     })
   })
 })

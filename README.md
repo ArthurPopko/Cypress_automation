@@ -23,7 +23,7 @@ In order to run testing script at your own machine perform the following instruc
 Project URL: https://github.com/QAfun/Cypress_automation.git
 For example, you may load the project using the command line:
 ```
-git clone hhttps://github.com/QAfun/Cypress_automation.git
+git clone https://github.com/QAfun/Cypress_automation.git
 ```
 #### 2.2 Install components
 As soon as project is loaded, go to the root and perform command:

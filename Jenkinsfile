@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    tools {nodejs "nodejs"} // helps with "npm not found issue"
     stages {
         stage('build') {
             steps {

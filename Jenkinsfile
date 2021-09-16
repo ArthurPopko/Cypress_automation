@@ -7,9 +7,6 @@ pipeline {
                 bat 'npm install'
             }
         }
-        nodejs('nodejs16') {
-            // some block
-        }
         stage('parallel') {
             parallel {
                 // start several test jobs in parallel, and they all
